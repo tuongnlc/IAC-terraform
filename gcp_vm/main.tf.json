@@ -1,0 +1,36 @@
+{
+    "resource": [
+        {
+            "google_compute_instance": [
+                {
+                    "test-vm": [
+                        {
+                            "allow_stopping_for_update": true,
+                            "boot_disk": [
+                                {
+                                    "initialize_params": [
+                                        {
+                                            "image": "ubuntu-1804-lts"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "labels": {
+                                "name": "test-vm",
+                                "purpose": "manning-infrastructure-as-code"
+                            },
+                            "machine_type": "e2-micro",
+                            "name": "test-vm",
+                            "network_interface": [
+                                {
+                                    "network": "default"
+                                }
+                            ],
+                            "zone": "us-central1-a"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
